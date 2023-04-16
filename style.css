@@ -63,3 +63,7 @@ body {
 a.navbar-brand {
   color: #454545
 }
+
+.honeypot-field {
+  display: none;
+}
