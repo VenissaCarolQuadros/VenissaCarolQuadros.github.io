@@ -1,6 +1,5 @@
 body {
     background: linear-gradient(45deg, #cfecd0, #ffc5ca);
-    margin-top: 70px;
   }
 
 .jumbotron{
@@ -63,4 +62,8 @@ body {
 }
 a.navbar-brand {
   color: #454545
+}
+
+.honeypot-field {
+  display: none;
 }
