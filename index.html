@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>Venissa Carol Quadros</title>
-        <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&effect=shadow-multiple">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
@@ -12,29 +11,32 @@
             <nav class="navbar fixed-top navbar-expand-sm navbar-light" id="neubar" >
                 <div class="container">
               
-                  <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto ">
                       <li class="nav-item">
-                        <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link mx-2 active #HOME" aria-current="page" href="#HOME">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link mx-2" href="#COMING_SOON">Projects</a>
+                        <a class="nav-link mx-2 #PROJECTS" href="#PROJECTS">Projects</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link mx-2" href="#COMING_SOON">Experience</a>
+                        <a class="nav-link mx-2 #COMING_SOON" href="#COMING_SOON">Experience</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link mx-2" href="#COMING_SOON"> And some more...</a>
+                        <a class="nav-link mx-2 #COMING_SOON" href="#COMING_SOON"> And some more...</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </nav>
+              <script src="scripts.js"></script>
             
         </header>
         <main>
+            <section id="HOME">
+            <div class="row" style="padding-top: 70px;"></div>
             <div class="row" style="padding-top: 20px;">   
-                <div class="col-sm-8" style="height: 100%;">
+                <div class="col-sm-8">
                 <div class="row">
                     <div class="jumbotron">
                     <div class="row">
@@ -72,7 +74,9 @@
                 </div>
             </div>
             
-            <div class="col-sm-4" ><div class="jumbotron" style="background-color: beige; height: 100%;" >
+            <div class="col-sm-4" >
+            <div class="row">
+                <div class="jumbotron" style="background-color: beige;" >
                 <div class="row"><h3 style="font-family: 'Sedgwick Ave Display'; padding-top: 5px;">About...</h3></div>
                 <div class="row"><img src="assets/Avatar.jpg" style="border-radius: 100px; width:200px; margin: auto;"></div>
                 <div class="row" style="padding-top: 5px;"><h2 style="font-family: 'Sedgwick Ave Display'">Venissa Carol Quadros <small style="font-size: 17px;">(she/her)</small></h2></div>
@@ -89,15 +93,94 @@
                         Cats &#128570;(obviously!), Sports &#127939;, Juice &#129380;, Holidays &#127958;
                     </p></div>
                 </div>
+                </div>
+            </div>
+            <div class="row">
+                <form action="https://formspree.io/venicq@gmail.com" method="post">
+                    <label for="email">Your Email</label>
+                    <input name="Email" id="email" type="email">
+                    <textarea   name="body"></textarea>
+                    <button type="submit">Submit</button>
+                  </form>
+            </div>
             </div>
         </div></div>
-        <p style="page-break-after: always;">&nbsp;</p>
-        <div class="row">
-            <div class="jumbotron" style="margin-top: 20px; background-color: rgb(222, 232, 247); padding-bottom: 5px;">
-            <h1 style="font-family: 'Sedgwick Ave Display'; font-size:150px; padding-top: 300px; padding-bottom: 300px;" id="COMING_SOON"> 🚧 Coming soon... 🚧</h1>
+    </section>
+    <p style="page-break-after: always;">&nbsp;</p>
+
+    <section id="PROJECTS">
+    <div class="row" style="padding-top: 70px;"></div>
+    <div class="row" style="padding-top: 20px;">
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="jumbotron">
+                    <div class="row" style="text-align: left; padding-top: 8px;"><h3 style="font-family: 'Sedgwick Ave Display'">Fav Projects & Work! <small style="font-size: 17px;">(*possibly some rants, sweat, and tears involved)</small></h3></div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="https://github.com/Shared-Reality-Lab">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">IMAGE</h5>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="https://venissacarolquadros.github.io/CanHap501/">
+                                <div class="card">
+                                    <img src="assets/CanHap.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">CanHaptics</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="https://github.com/Shared-Reality-Lab">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">TremCasso</h5>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="https://github.com/VenissaCarolQuadros">
+                                <div class="card">
+                                    <img src="https://i2-prod.mirror.co.uk/incoming/article25609261.ece/ALTERNATES/s615b/0_PUSS-IN-BOOTS.jpg" class="card-img-top" alt="Puss in Boots with pleading eyes" style="height: 300px; width: auto;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Check out the other stuff that dwells dejectedly on GitHub...</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-              
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="jumbotron" style="background-color: rgb(247, 222, 238);">
+                    <div class="row" style="text-align: left; padding-top: 8px;"><h3 style="font-family: 'Sedgwick Ave Display'">Would Love To Have More Conversations About...</h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <p style="page-break-after: always;">&nbsp;</p>
+        
+    <section id="COMING_SOON">
+        <div class="row">
+            <div class="jumbotron" style="margin-top: 20px; background-color: rgb(222, 232, 247); padding-bottom: 5px;">
+            <h1 style="font-family: 'Sedgwick Ave Display'; font-size:150px; padding-top: 300px; padding-bottom: 300px;" > 🚧 Coming soon... 🚧</h1>
+            </div>
+        </div>
+    </section>         
             
         </main>
         <footer>
